@@ -10,20 +10,6 @@ import 'leaflet/dist/leaflet.css';
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d', '#ffc658', '#8dd1e1'];
 
-// Add installation coordinates (you'll need to replace these with actual coordinates)
-const INSTALLATION_COORDINATES = {
-  'Fort Bragg': { lat: 35.1419, lng: -79.0061 },
-  'Fort Hood': { lat: 31.1319, lng: -97.7851 },
-  'Fort Campbell': { lat: 36.6672, lng: -87.4755 },
-  'Fort Stewart': { lat: 31.8691, lng: -81.6089 },
-  'Fort Benning': { lat: 32.3538, lng: -84.9400 },
-  'Fort Riley': { lat: 39.0855, lng: -96.7645 },
-  'Fort Carson': { lat: 38.7469, lng: -104.7828 },
-  'Fort Drum': { lat: 44.0509, lng: -75.7177 },
-  'Fort Lewis': { lat: 47.0855, lng: -122.5821 },
-  'Fort Polk': { lat: 31.0445, lng: -93.2035 }
-};
-
 // Helper function to normalize weather event types
 const normalizeWeatherType = (type) => {
   if (!type) return 'Other';
@@ -109,7 +95,7 @@ const WeatherDamageDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/ag3_data_v3.csv');
+        const response = await fetch('/ag3_data_v7.csv');
         const csvText = await response.text();
         
         Papa.parse(csvText, {
@@ -628,25 +614,35 @@ const WeatherDamageDashboard = () => {
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 />
-                {costByInstallation.map((installation) => {
-                  const coords = INSTALLATION_COORDINATES[installation.name];
-                  if (!coords) return null;
+                {/* Add markers for all installations with damage */}
+                {filteredData.map((item, index) => {
+                  const lat = parseFloat(item.Latitude);
+                  const lng = parseFloat(item.Longitude);
+                  if (isNaN(lat) || isNaN(lng)) return null;
                   
-                  const radius = Math.sqrt(installation.value / 1000000) * 5;
+                  // Calculate normalized cost for opacity (0.2 to 0.8)
+                  const maxCost = Math.max(...filteredData.map(d => d.Cost));
+                  const opacity = 0.2 + (item.Cost / maxCost) * 0.6;
+                  
+                  // Calculate radius based on cost (logarithmic scale)
+                  const radius = Math.log10(item.Cost) * 3;
+                  
                   return (
                     <CircleMarker
-                      key={installation.name}
-                      center={[coords.lat, coords.lng]}
+                      key={`${item.Installation}-${index}`}
+                      center={[lat, lng]}
                       radius={radius}
                       fillColor="#e53e3e"
                       color="#742a2a"
                       weight={1}
-                      opacity={0.8}
-                      fillOpacity={0.6}
+                      opacity={opacity}
+                      fillOpacity={opacity}
                     >
                       <Popup>
-                        <strong>{installation.name}</strong><br />
-                        Damage Cost: {formatCurrency(installation.value)}
+                        <strong>{item.Installation}</strong><br />
+                        Weather Event: {item.weatherEventFull}<br />
+                        Date: {item.date.toLocaleDateString()}<br />
+                        Damage Cost: {formatCurrency(item.Cost)}
                       </Popup>
                     </CircleMarker>
                   );

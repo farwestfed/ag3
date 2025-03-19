@@ -1,0 +1,124 @@
+﻿Branch,Weather Event,Named Storm,Date of Weather Event,Year,Appropriation,Line Item/SAG,Line Item/SAG title,Details of Expense,Installation,State,Cost,Latitude,Longitude
+USA,Winter Storm,,45278,2023,OMA,132,FSRM,Exchange and Theater building damage; Electrical Pole Replacement ,Fort Hamilton,NY,600000,40.6084,-74.0288
+USA,Hail,,45299,2024,OMA,132,FSRM,Roof Damage and Uprooted Trees,Fort Bliss,TX,16885200,31.8129,-106.421
+USA,Winter Storm,,45299,2024,OMA,132,FSRM,Winter Storm,Fort Cavazos,TX,4261566,31.134,-97.78
+USA,Winter Storm,,45299,2024,OMA,132,FSRM,Winter Storm,Fort Riley,KS,6106939,39.0872,-96.8136
+USA,Wildfire,,45299,2024,OMA,132,FSRM,Fire Damage,Fort Liberty,NC,800000,35.1402,-79.006
+USA,Winter Storm,,45302,2024,OMA,132,FSRM,"Yakima, Multiple buildings",Joint Base Lewis-McChord,WA,,47.0525,-122.4827
+USA,Winter Storm,,45306,2024,OMA,132,FSRM,Real property facilities (35) affected from freezing temperature,Fort Leavenworth,KS,18797000,39.3597,-94.9225
+USA,Winter Storm,,45306,2024,OMA,131,FSRM,Emergency clean up,Fort Leavenworth,KS,100000,39.3597,-94.9225
+USA,High Surf,,45312,2024,RDT&E,DW7,QRPA,Roi-Namur Island,Kwajalein,MH,69771445,9.1898,167.4243
+USA,Heavy Rain,,45326,2024,OMA,132,FSRM,Power outages,Presidio of Monterey,CA,,36.6138,-121.8223
+USA,Thunderstorm Wind,,45384,2024,OMA,132,FSRM,"Roof and window damages, Numerous downed power lines, trees",Fort Leonard Wood,MO,,37.7386,-92.1407
+USA,Strong Wind,,45397,2024,OMA,132,FSRM,"Wind storm:  Multiple bldgs, roof repairs, gutters, fascia",Fort Riley,KS,182700,39.0872,-96.8136
+USA,Strong Wind,,45399,2024,OMA,132,FSRM,"Wind storm:  Multiple bldgs, roof repairs, gutters, fascia",Fort Leavenworth,KS,276300,39.3597,-94.9225
+USA,Tornado,,45417,2024,OMA,132,FSRM,"Strong winds, 16 bldgs affected, roof repairs, gutters, downspouts, HVAC",Fort Cavazos,TX,9428618,31.134,-97.78
+USA,Tornado,,45417,2024,OMA,121,Unk,"Strong winds, Damage to range structures",Fort Cavazos,TX,1031000,31.134,-97.78
+USA,Hurricane (Typhoon),Debby,45506,2024,OMA,132,FSRM,Flooding,Fort Liberty,NC,,35.1402,-79.006
+USA,Hurricane (Typhoon),Debby,45506,2024,OMA,132,FSRM,"Tank trails,ranges and bridges",Fort Stewart,GA,338300,31.8691,-81.6096
+USA,Hail,,45505,2024,OMA,132,FSRM,Hanger hail damage ,Fort Carson,CO,82000000,38.738,-104.788
+USA,Tropical Storm,Cyclone #8,45536,2024,OMA,132,FSRM,"Bldg 12 (OMA) - Flooding of 1st Floor to ceiling.  Repair/replace electrical system, HVAC components, Fire Alarm system, other internal facility components",Military Ocean Terminal Sunny Point,NC,3000000,33.998,-78.034
+USA,Tropical Storm,Cyclone #8,45551,2024,OMA,132,FSRM,Emergency Brunswick Road - Repair road - road undermined for MISSION ESSENTIAL REPAIR,Military Ocean Terminal Sunny Point,NC,1327763,33.998,-78.034
+USA,Tropical Storm,Cyclone #8,45551,2024,OMA,132,FSRM,Emergency Perimeter Road and Security Fencing - FY24 repairs secure perimeter fence and fix 5 areas on road to allow vehical passage. TERMINAL SECURITY REPAIR,Military Ocean Terminal Sunny Point,NC,3750000,33.998,-78.034
+USA,Tropical Storm,Cyclone #8,45551,2024,OMA,132,FSRM,Emergency Road Bridge Insepction  ,Military Ocean Terminal Sunny Point,NC,30000,33.998,-78.034
+USA,Tropical Storm,Cyclone #8,45551,2024,OMA,132,FSRM,Emergency Center Wharf Entrance Repair - storm water undermined N entrance to CW.  Repair required for MISSION.  MISSION ESSENTIAL REPAIR,Military Ocean Terminal Sunny Point,NC,868054,33.998,-78.034
+USA,Tropical Storm,Cyclone #8,45551,2024,TWCF,Unk,932,Emergency PTC8 Mainline Rail Repairs - Permenent repairs to bring Mainline operational within 30 days to support MISSION:  MISSION ESSENTIAL REPAIR,Military Ocean Terminal Sunny Point,NC,4015000,33.998,-78.034
+USA,Tropical Storm,Cyclone #8,45551,2024,TWCF,Unk,932,Emergency PTC8 Tressel Rail Bridge inspections - to ensure there is no underwater dammage to bridges MISSION ESSENTIAL,Military Ocean Terminal Sunny Point,NC,90000,33.998,-78.034
+USA,Tropical Storm,Cyclone #8,45551,2024,OMA,132,FSRM,"Compelte repairs of perimeter road, OMA Facility Repairs.  IGEs will be provided in FY25 and project repairs will then be seperated by infrastructure",Military Ocean Terminal Sunny Point,NC,25000000,33.998,-78.034
+USA,Tropical Storm,Cyclone #8,45551,2024,TWCF,Unk,932,"Repair Interior rail (Tracks 20/21/45A and 46), TWCF infrastructure pepairs to include but not limited to Berms/bldgs/ammo holding pads.  IGE will be provided in FY25 and project repairs will then be seperated by infrastructure.  MISSION ESSENTIAL REPAIRS",Military Ocean Terminal Sunny Point,NC,15000000,33.998,-78.034
+USA,Strong Wind,,44934,2023,OMA,131,Unk,"Emergency clean up, Overtime labor",Fort Bliss,TX,29670,31.8129,-106.421
+USA,Strong Wind,,44934,2023,OMA,132,FSRM,"Wind storm:  Multiple bldgs, roof repairs, gutters, fascia",Fort Bliss,TX,15433410,31.8129,-106.421
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,121,Unk,"Labor,Travel, OT",Fort Eisenhower,GA,10000,33.4166,-82.1637
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,131,Unk,"Emergency Portable Latrines, Loabor, Travel OT, Tree Removal, Debris Clean up due to no water/power",Fort Eisenhower,GA,36978800,33.4166,-82.1637
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,Cabin Repair Legion Landing,Fort Eisenhower,GA,15000,33.4166,-82.1637
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,Facility and Infrastructure Damage still under assessment,Fort Eisenhower,GA,36500000,33.4166,-82.1637
+USA,Hurricane (Typhoon),Helene,45562,2024,OMA,131,Unk,Repair Roof & Gutters - Relocatable facilities,Fort Stewart,GA,46400,31.8691,-81.6096
+USA,Hurricane (Typhoon),Helene,45562,2024,OMA,131,Unk,Replace LMR Tower,Fort Stewart,GA,1250000,31.8691,-81.6096
+USA,Hurricane (Typhoon),Helene,45562,2024,OMA,131,Unk,Replace tower Morgans Bridge,Fort Stewart,GA,1250000,31.8691,-81.6096
+USA,Hurricane (Typhoon),Helene,45562,2024,OMA,132,FSRM,"Repair roofs, siding, fencing, facsia and multiple DMOs",Fort Stewart,GA,8356200,31.8691,-81.6096
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,Facility and Infrastructure Damage still under assessment,Fort Jackson,SC,20000,34.0166,-80.9398
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,"Legacy Blvd: Failed Storm Drain and Road Erosion 32.374378, -84.957331",Fort Moore,GA,15000,32.3632,-84.9493
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,"Marine Road: Bike Trail Retaining Wall and Road Erosion 32.372155, -84.931612",Fort Moore,GA,80000,32.3632,-84.9493
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,"Sightseeing Rd. #1 Water Utility and Erosion, Undersized Storm Drain 32.325528, -84.971371/ Sightseeing Rd. #2 Water and Utility and Erosion, Failed Storm Culvert 32.326023, -84.971213",Fort Moore,GA,1500000,32.3632,-84.9493
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,"Sunshine Road #2 Road Settling 32.277592, -84.902506",Fort Moore,GA,1000000,32.3632,-84.9493
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,"Sunshine Road #3 Utility Pole Erosion 32.281646, -84.905253",Fort Moore,GA,300000,32.3632,-84.9493
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,"Sunshine Road #4 Depression in Asphalt 32.275634, -84.873116",Fort Moore,GA,2500,32.3632,-84.9493
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,132,FSRM,"Vibbert Ave: Failed Storm Drain 32.363269, -84.976283",Fort Moore,GA,1000,32.3632,-84.9493
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,NAF,Unk,"Sunshine Road #1 Major Road Settling and Erosion 32.275039, -84.900504",Fort Moore,GA,1000000,32.3632,-84.9493
+USA,Hurricane (Typhoon),Helene,45561,2024,OMA,131,Unk,"Labor, OT  and Travel for DAC Deployed to FEGA. ",Fort Novosel,AL,35500,31.3378,-85.711
+USA,Hurricane (Typhoon),Debby,45506,2024,OMA,132,FSRM,Miscellaneous Demand Maintenance Orders - 54 total,Hunter Army Airfield,GA,16500,32.0146,-81.1457
+USA,Hurricane (Typhoon),Debby,45506,2024,OMA,132,FSRM,Repair Perimter Road Bridge ,Hunter Army Airfield,GA,60800,32.0146,-81.1457
+USA,Hurricane (Typhoon),Helene,45562,2024,OMA,132,FSRM,Miscellaneous Demand Maintenance Orders - 188 total,Hunter Army Airfield,GA,55800,32.0146,-81.1457
+USA,Hurricane (Typhoon),Helene,45562,2024,OMA,132,FSRM,"Repair roofs, siding, fencing, doors, windows in 38 facilities",Hunter Army Airfield,GA,11622300,32.0146,-81.1457
+USA,Hurricane (Typhoon),Helene,45562,2024,OPA/AWCF,Unk,Unk,"Facility and Infrastructure Damage Estimates still under development.  Facility Repairs, multiple facilities.  Validation inspection to be scheduled on site for Contractor's ROM submittal of repairs ",Radford Army Ammunition Plant,VA,50000000,37.1814,-80.5816
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Banquets Area Fence damage,Shades of Green Resort,FL,,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Express Caf√© bus stop area water leak,Shades of Green Resort,FL,,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Hotel - carpet damage / water leaks throughout,Shades of Green Resort,FL,,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Hotel Entry--Landscaping Fallen tree,Shades of Green Resort,FL,4500000,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Hotel Landscaping--North West side Fallen trees,Shades of Green Resort,FL,3100000,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Magnolia Old Loading Dock Fence damage,Shades of Green Resort,FL,,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Palm BOH (back off house) Contracting Office water leak,Shades of Green Resort,FL,,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Palm BOH (back off house) Mail Room roof leak,Shades of Green Resort,FL,,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Palm Wing 5th floor room damage,Shades of Green Resort,FL,,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Palm Wing Elevator Damage,Shades of Green Resort,FL,,28.4094,-81.5916
+USA,Hurricane (Typhoon),Milton,45574,2024,NAF,NAF,Unk,Palm Wing wet carpet (various),Shades of Green Resort,FL,,28.4094,-81.5916
+USAR,Winter Storm,,45292,2024,OMAR,132,FSRM,Hatch coverings on roof damaged by heavy winds,Narragansett,RI,1200,41.4501,-71.4495
+USAR,High Wind,,45292,2024,OMAR,132,FSRM,50' Tree fell through MEP Fenceline,Edgemont,PA,1150,39.949,-75.4416
+USAR,High Wind,,45292,2024,OMAR,132,FSRM,50' Tree Uprooted,Baltimore,MD,2500,39.2904,-76.6122
+USAR,Tropical Storm,Debby,45505,2024,OMAR,132,FSRM,Flooding and fallen tree,Lodi,NJ,2500,40.8823,-74.0832
+USAR,Tropical Storm,Debby,45505,2024,OMAR,132,FSRM,Roof Leaks/Fence/Interior damage/Window damage,St. Petersburg,FL,250000,27.7676,-82.6403
+USAR,Thunderstorm Wind,,45505,2024,OMAR,132,FSRM,Cooling system damage (Lightning Strike),St. Petersburg,FL,15000,27.7676,-82.6403
+USAR,Thunderstorm Wind,,45505,2024,OMAR,132,FSRM,Fence damage due to fallen tree,Athens,GA,5000,33.9519,-83.3576
+USAR,Thunderstorm Wind,,45505,2024,OMAR,132,FSRM,Fence damage due to fallen tree,Gainesville,GA,5000,34.2979,-83.8241
+USAR,Hurricane (Typhoon),Francine,45536,2024,OMAR,132,FSRM,Repair Interior Water Damage,New Orleans,LA,5000,29.9511,-90.0715
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Replace Light Pole Damaged from Hurricane Winds,St. Petersburg,FL,15000,27.7676,-82.6403
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Replace Light Pole Damaged from Hurricane Winds,Miami,FL,15000,25.7617,-80.1918
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Roof and Interior Water Damage,Tampa,FL,10000,27.9506,-82.4572
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Roof and Interior Water Damage,Tampa,FL,10000,27.9506,-82.4572
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Roof,Lexington,KY,5000,38.0406,-84.5037
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Roof Leaks and Interior Water Damage,Fort Knox,KY,8000,37.9161,-85.9565
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Roof,Fort Thomas,KY,150000,39.0789,-84.4477
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Roof Leaks and Interior Water Damage,Knoxville,TN,5000,35.9606,-83.9207
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Remove Tree,Aiken,SC,2500,33.5604,-81.7196
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Replace Roof and  Repair Interior Water Damage,Fort Jackson,SC,3963000,34.0166,-80.9398
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Roof Leaks and Interior Water Damage,Greenville,SC,2500,34.8526,-82.394
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Replace Roof and  Repair Interior Water Damage,Charleston,SC,3095000,32.7765,-79.9311
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Roof Leaks and Interior Water Damage,St. Petersburg,GA,125000,27.7676,-82.6403
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Repair Fence,Asheville,NC,5000,35.5951,-82.5515
+USAR,Hurricane (Typhoon),Helene,45536,2024,OMAR,132,FSRM,Remove Tree and Repair Fence,Lumberton,NC,7500,34.6182,-79.0086
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,Replace Exterior HVAC Equipment,Tallahassee,FL,500000,30.4383,-84.2807
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,Replace Exterior Windows,Orlando,FL,750000,28.5383,-81.3792
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,Repair Exterior Wall and Interior Water Damage,Tampa,FL,,27.9506,-82.4572
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,Repair Interior Water Damage,Tampa,FL,,27.9506,-82.4572
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,"Repair HVAC, Exterior Storm Water Drainage and Interior Water Damage",Tampa,FL,,27.9506,-82.4572
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,Repair Interior Water Damage,Tampa,FL,,27.9506,-82.4572
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,"Repair Exterior, HVAC, and Interior Water Damage",St. Petersburg,FL,200000,27.7676,-82.6403
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,"Repair Bay Door, Gates, Access Control System, and Roof Ventilation",Clearwater,FL,200000,27.9659,-82.8001
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,"Repair Roof Leaks, HVAC and Interior Water Damage",Pinellas Park,FL,200000,27.8428,-82.6995
+ANG,Winter Storm,,45278,2023,OMNG,132G76,Restoration,"PN 442415: Wind & rain storm ripped roof off, RTUs moved off curb, gas service severed, interior ceiling damaged, electrical lines, fixtures and devices damaged from water. Exterior insulation damaged.",Warwick,RI,1331,41.7001,-71.4162
+ANG,Winter Weather,,45301,2024,OMNG,132G76,Restoration,PN 53240061: Pacific Northwest Sub Arctic Blast/Winter Storm.  Pipes burst causing flooding and damages to the building interiors.,Multiple Sites,WA,2332.9,#N/A,#N/A
+ANG,High Wind,,45350,2024,OMNG,132G76,Restoration,"PN 09A4524002: Roof Replacement for the Main Hangar Building 320 located at Connecticut‚Äôs AVCRAD in Groton, Connecticut as a result of high winds.",Groton,CT,277.8,41.3498,-72.0791
+ANG,Hail,,45375,2024,OMNG,132G76,Restoration,PN 5240018: Repairs to roof and interior due to extensive hail and water damage. ,Harrisburg,AR,243,35.5648,-90.7176
+ANG,High Wind,,45397,2024,OMNG,132G76,Restoration,PN 467114: High winds; roof section of area 4 on the CSMS 1 shop has 2 large rips in the membrane and multiple smaller rips around mechanical equipment.,Mitchell,SD,970.2,43.7094,-98.0298
+ANG,Thunderstorm Wind,,45407,2024,OMNG,132G76,Restoration,"PNs 5424037 / 542438: EF1 Tornadic Winds damaged both Dunbar Armory and Eleanor CSM. Repair or replace damaged drywall, water damage to doors and roof. ",Eleanor / Dunbar,WV,671.2,38.5351,-81.8196
+ANG,Earthquake,,45387,2024,OMNG,132G76,Restoration,"PN 34FD029: Repairs to interior and exterior structural damage to the JFHQ Building 3650, JBMDL caused by 4.8 mag earthquake.",Joint Base McGuire-Dix-Lakehurst,NJ,900,40.0156,-74.5917
+ANG,Hurricane (Typhoon),Beryl,45480,2024,OMNG,132G76,Restoration,"PN  48240100 / 48240200: Heavy wind and heavy rains caused wind and water damage impacting the roof, flooring, ceiling, lighting,flashing, windows, doors, finishings, and HVAC of the Ellington Field AASF Hangerand Readiness Center, and the roof, flooring, ceiling, lighting,windows, doors, and finishings of the Angleton Readiness Center",Ellington Field / Angleton,TX,2377.6,29.6073,-95.1588
+ANG,Hurricane (Typhoon),Helene,45561,2024,OMNG,132G76,Restoration,"PN 12224129: Analyze, assess, repair and replace multiple components throughout the facility. North wing: 8,016 SF of steep sloped metal (RSL 7); South Wing - 3,609 SF steep slope formed metal (RSL20). Scope of work requires assessment and repairs on North Wing and South Wing roof along with replacement of wet ceiling tiles",Tampa Readiness Center Field Maintenance Shop 4,FL,111.3,27.9713,-82.4454
+ANG,Hurricane (Typhoon),Helene,45561,2024,OMNG,132G76,Restoration,PN 12224128: Assess and repair HVAC controls and conduct technical system balancing to ensure proper performance and operation of Unit(s). Adjust fence mechanisms as necessary to return functions to full mission capabilities.,Jacksonville Cecil Field Army Aviation Support Facility 1,FL,50,30.2187,-81.876
+ANG,Hurricane (Typhoon),Helene,45561,2024,OMNG,132G76,Restoration,"PN 12224127: Replace roofing for 37,600 SF on Readiness Center. Assess and repair damages with scheduling to perform temporary roof repairs. Repair of multiple leaks near roof drains, replacement of components for permanent repair of roof or restored back to 20 year life cycle.",Tallahassee Readiness Center Field Maintenance Shop 13,FL,2143.2,30.4358,-84.2841
+ANG,Hurricane (Typhoon),Helene,45562,2024,OMNG,132G76,Restoration,"PN 372025009 consists of repair and/or replacement of building systems and components damaged by Hurricane Francine. Components include repair of the building envelope and MEP systems that sustained water/wind damage; including removal of asbestos and lead containing materials, refinishing of interior walls and flooring; site repairs of erosion and drainage systems, possible structural damage due to erosion and any other repairs that must conform to current State code and NCNG standards for life, health and safety.",Boone Readiness Center,NC,4348.1,36.2168,-81.6746
+ANG,Hurricane (Typhoon),Helene,45562,2024,OMNG,132G76,Restoration,"PN 372025010  consists of repair/restoration as a result of facility damage from Hurricane Helene. The AON will repair and restore the roof, flashing, gutters, and windows as a result of hurricane force winds and heavy rain. It will repair and restore the fencing, POV parking and entry road due to heavy winds and erosion. There will be an abatement of hazardous materials, as needed.",Jefferson Readiness Center,NC,826.4,36.4201,-81.4737
+ANG,Hurricane (Typhoon),Helene,45562,2024,OMNG,132G76,Restoration,"PN 372025011 consists of repair and/or restoration of site damage by Hurricane Helene.  Components include repair/resturation of site repairs of erosion and drainage systems due to erosion and any other repairs that must conform to current State code and NCNG standards for life, health and safety. ",Newton Readiness Center,NC,329.7,35.669,-81.2217
+ANG,Hurricane (Typhoon),Helene,45561,2024,OMNG,132G76,Restoration,Damage to bldgs. at GA's Training Center on their enclave at Fort Stewart. Significant roof damage to approximately 250 of their open bay transient barracks. Each of the bldgs. have shingle roofs and are 20+ years old. ,Georgia Training Center on Fort Stewart,GA,9500,31.8691,-81.6096
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,Damage to Awnings & Gutters,Field Maintenance Shop 6 - Haines City,FL,25,28.1142,-81.6201
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,Damage to Gutters,Field Maintenance Shop 3 - Sarasota,FL,20,27.3364,-82.5307
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,"Roof Leaks, Gate, and Overhang Damage",Wauchula Readiness Center,FL,250,27.5475,-81.8115
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,"Soffit, air ducts,and  roof top A/C damages.  Clogged Drainage, Erosion, and concrete rupture.",Sarasota Readiness Center,FL,225,27.3412,-82.5283
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,Roof Leaks,Mark Lance Readiness Center,FL,456,29.9108,-81.3208
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,Soffit damages,Orlando National Training Center,FL,18,28.5383,-81.3792
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,"Damaged/unsafe trees, Kitchen Roof top, Electrical System Damages, HVAC Damages",Palmetto Readiness Center,FL,200,27.5214,-82.5723
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,Roof Leaks,Bradenton Readiness Center,FL,225,27.498928,-82.574821
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,Rain Gutter Damages,Bradenton Readiness Center,FL,25,27.498928,-82.574821
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,Roof Leaks,DeLand Readiness Center,FL,133,29.028318,-81.303116
+ANG,Hurricane (Typhoon),Milton,45574,2024,OMNG,132G76,Restoration,"Roof, Gutter, Fence Damage",Saint Petersburg Readiness Center,FL,953,27.7676,-82.6403
+USAR,Hurricane (Typhoon),Milton,45566,2024,OMAR,132,FSRM,"Repair Window Leaks, Roof and Interior Water Damages",MacDill Air Force Base,FL,350000,27.8493,-82.5212
