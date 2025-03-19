@@ -105,23 +105,22 @@ const WeatherDamageDashboard = () => {
             const cleanedData = results.data
               .filter(item => item.Cost && !isNaN(parseFloat(item.Cost)))
               .map(item => {
-                // Parse date from MM/DD/YY format
-                const dateParts = item['Date of Weather Event'].split('/');
-                const date = new Date(
-                  2000 + parseInt(dateParts[2]), // Year
-                  parseInt(dateParts[0]) - 1,    // Month (0-based)
-                  parseInt(dateParts[1])         // Day
-                );
+                // Convert Excel serial date to JavaScript Date
+                const excelDate = parseInt(item['Date of Weather Event']);
+                const date = new Date((excelDate - 25569) * 86400 * 1000); // Convert Excel date to JS date
+                
+                // Format the weather event name, removing '(Typhoon)' for display
+                const weatherEventName = item['Weather Event'].replace('(Typhoon)', '').trim();
                 
                 return {
                   ...item,
                   Cost: parseFloat(item.Cost),
-                  Year: date.getFullYear(),
+                  Year: parseInt(item.Year),
                   date: date,
-                  // Add named storm information if available
+                  // Add named storm information if available, but remove '(Typhoon)'
                   weatherEventFull: item['Named Storm'] 
-                    ? `${item['Weather Event']} (${item['Named Storm']})`
-                    : item['Weather Event']
+                    ? `${weatherEventName} (${item['Named Storm']})`
+                    : weatherEventName
                 };
               });
             
@@ -535,58 +534,42 @@ const WeatherDamageDashboard = () => {
               
               <div>
                 <h2>Top Weather Events by Cost Impact</h2>
-                <div className="chart-container" style={{ height: '400px' }}>
-                  <ResponsiveContainer width="100%" height="100%">
+                <div className="chart-container">
+                  <ResponsiveContainer width="100%" height={550}>
                     <BarChart
                       data={weatherEventsByCost}
                       layout="vertical"
-                      margin={{ top: 5, right: 30, left: 5, bottom: 5 }}
+                      margin={{ top: 5, right: 30, left: 10, bottom: 5 }}
                     >
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis 
                         type="number" 
                         scale="log" 
                         domain={['auto', 'auto']}
-                        tickFormatter={(value) => {
-                          if (value >= 1000000) {
-                            return `$${(value / 1000000).toFixed(1)}M`;
-                          } else if (value >= 1000) {
-                            return `$${(value / 1000).toFixed(1)}K`;
-                          }
-                          return `$${value}`;
-                        }}
+                        tickFormatter={formatCurrency}
                       />
                       <YAxis 
                         type="category" 
                         dataKey="name" 
-                        width={240}
-                        style={{
-                          fontSize: '13px',
-                          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+                        width={120}
+                        tick={{ 
+                          fontSize: 12,
+                          width: 110,
+                          wordWrap: 'break-word'
                         }}
-                        tick={props => (
-                          <text
-                            {...props}
-                            fill="#4a5568"
-                            textAnchor="end"
-                            dominantBaseline="middle"
-                            x={props.x - 10}
-                          >
-                            {props.payload.value}
-                          </text>
-                        )}
                       />
                       <Tooltip 
-                        formatter={(value) => {
-                          if (value >= 1000000) {
-                            return [`$${(value / 1000000).toFixed(2)}M`, 'Cost'];
-                          } else if (value >= 1000) {
-                            return [`$${(value / 1000).toFixed(2)}K`, 'Cost'];
-                          }
-                          return [`$${value.toFixed(2)}`, 'Cost'];
-                        }}
+                        formatter={(value) => formatCurrency(value)}
+                        labelStyle={{ fontSize: 12 }}
                       />
-                      <Bar dataKey="value" fill="#8884d8" />
+                      <Bar 
+                        dataKey="value" 
+                        fill="#8884d8"
+                      >
+                        {weatherEventsByCost.map((entry, index) => (
+                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                      </Bar>
                     </BarChart>
                   </ResponsiveContainer>
                 </div>
