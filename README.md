@@ -1,21 +1,36 @@
-# Army Weather Damage Dashboard
+# ASA(IE&E) Weather Event Dashboard
 
 ## Overview
-This prototype dashboard provides decision support for infrastructure investment decisions at US Army bases, based on historical weather damage data. It visualizes weather-related damages and costs to help prioritize infrastructure investments.
+This dashboard provides decision support for infrastructure investment decisions at US Army bases, based on historical weather damage data. It visualizes weather-related damages and costs to help prioritize infrastructure investments and mitigation strategies.
 
 ## Features
 - Interactive dashboard showing weather damage costs across Army installations
-- Filtering by year and weather event type
-- Visualizations including:
-  - Cost distribution by weather event type (pie chart)
-  - Top 10 impacted installations (bar chart)
-  - Monthly damage cost trends (area chart)
-  - Year-over-year cost trends (line chart)
-- Key metrics summary
-- Decision support recommendations
+- Comprehensive data analysis through multiple views:
+  - Damage Forecast
+  - Event Analysis
+  - Geographic Analysis
+  - Budget Planning & Mitigation Strategy
+
+### Key Visualizations
+- Cost distribution by weather event type (pie chart)
+- Top weather events by cost impact (horizontal bar chart)
+- Geographic distribution of damages (map visualization)
+- Scenario modeling for mitigation strategies
+- Cost-benefit analysis for infrastructure improvements
+
+### Budget Planning Features
+- Interactive mitigation scenario modeling
+- Real-time cost-benefit analysis
+- ROI calculations for different mitigation strategies
+- Implementation cost tracking
+- Projected damage reduction estimates
 
 ## Data
-The dashboard uses historical weather damage data stored in CSV format (converted from the original Excel file `army_wx_data.xlsx`).
+The dashboard uses historical weather damage data stored in CSV format (`ag3_data_v7.csv`), which includes:
+- Weather event details
+- Damage costs
+- Installation locations
+- Event dates and types
 
 ## Getting Started
 
@@ -24,7 +39,11 @@ The dashboard uses historical weather damage data stored in CSV format (converte
 - npm
 
 ### Installation
-1. Clone the repository
+1. Clone the repository:
+   ```
+   git clone https://github.com/farwestfed/ag3.git
+   cd ag3
+   ```
 2. Install dependencies:
    ```
    npm install
@@ -36,7 +55,7 @@ To start the development server:
 npm start
 ```
 
-The application will be available at [http://localhost:3000](http://localhost:3000).
+The application will be available at [http://localhost:3001](http://localhost:3001).
 
 ### Building for Production
 To build the application for production:
@@ -45,87 +64,28 @@ npm run build
 ```
 
 ## Technologies Used
-- React.js
-- Recharts (for data visualization)
-- Tailwind CSS (for styling)
-- PapaParse (for CSV parsing)
-- Lodash (for data manipulation)
+- React.js - Frontend framework
+- Recharts - Data visualization library
+- PapaParse - CSV parsing
+- Tailwind CSS - Styling
 
 ## Project Purpose
-This prototype demonstrates how weather damage data can be leveraged to make informed infrastructure investment decisions across Army installations. By visualizing historical damage patterns, decision-makers can:
+This application helps decision-makers:
 
-1. Identify installations with highest financial impact from weather events
-2. Understand seasonal weather damage patterns
-3. Prioritize investments based on weather event types causing most damage
-4. Forecast future infrastructure needs based on historical trends
+1. Identify high-risk installations based on historical weather damage
+2. Evaluate cost-effective mitigation strategies
+3. Plan infrastructure investments based on:
+   - Historical damage patterns
+   - Cost-benefit analysis
+   - ROI calculations
+4. Make data-driven decisions for weather resilience improvements
 
-# Getting Started with Create React App
+## Contributing
+To contribute to this project:
+1. Create a feature branch
+2. Make your changes
+3. Submit a pull request
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is proprietary and confidential.
+Copyright © 2024 ASA(IE&E). All rights reserved.
