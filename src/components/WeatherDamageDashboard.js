@@ -95,7 +95,7 @@ const WeatherDamageDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/ag3_data_v7.csv');
+        const response = await fetch('/ag3_data_v9.csv');
         const csvText = await response.text();
         
         Papa.parse(csvText, {

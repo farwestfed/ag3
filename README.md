@@ -26,7 +26,7 @@ This dashboard provides decision support for infrastructure investment decisions
 - Projected damage reduction estimates
 
 ## Data
-The dashboard uses historical weather damage data stored in CSV format (`ag3_data_v7.csv`), which includes:
+The dashboard uses historical weather damage data stored in CSV format (`ag3_data_v9.csv`), which includes:
 - Weather event details
 - Damage costs
 - Installation locations
