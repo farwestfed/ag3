@@ -22,7 +22,7 @@ const normalizeWeatherType = (type) => {
       lowerType.includes('tropical') ||
       lowerType.includes('cyclone') ||
       lowerType.includes('mawar')) {
-    return 'Hurricane/Tropical Storm';
+    return 'Hurricane';
   }
   
   // Winter Weather category
@@ -77,6 +77,80 @@ const normalizeWeatherType = (type) => {
   return 'Other';
 };
 
+// Chat Modal Component
+const ChatModal = ({ isOpen, onClose }) => {
+  const sampleConversation = [
+    { role: 'assistant', content: 'What would you like to know?' },
+    { role: 'user', content: 'What kind of weather event has caused the most damage to SE installations?' },
+    { role: 'assistant', content: 'Based on our data analysis, Hurricanes have caused the most significant damage to Southeastern installations, accounting for approximately 70% of all weather-related costs in the region. Fort Stewart and Military Ocean Terminal Sunny Point have been particularly impacted, with multiple hurricane events causing extensive infrastructure damage. The most costly events were associated with major hurricanes that brought both wind damage and flooding.' }
+  ];
+
+  if (!isOpen) return null;
+
+  return (
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 1000
+    }}>
+      <div style={{
+        backgroundColor: 'white',
+        padding: '2rem',
+        borderRadius: '0.5rem',
+        width: '600px',
+        maxHeight: '80vh',
+        position: 'relative',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+      }}>
+        <button
+          onClick={onClose}
+          style={{
+            position: 'absolute',
+            right: '1rem',
+            top: '1rem',
+            border: 'none',
+            background: 'none',
+            fontSize: '1.5rem',
+            cursor: 'pointer',
+            color: '#666'
+          }}
+        >
+          ×
+        </button>
+        <h2 style={{ marginBottom: '1.5rem' }}>Data Assistant</h2>
+        <div style={{
+          overflowY: 'auto',
+          maxHeight: 'calc(80vh - 150px)'
+        }}>
+          {sampleConversation.map((message, index) => (
+            <div
+              key={index}
+              style={{
+                marginBottom: '1rem',
+                padding: '0.75rem',
+                borderRadius: '0.5rem',
+                backgroundColor: message.role === 'user' ? '#e2e8f0' : '#f7fafc',
+                marginLeft: message.role === 'user' ? 'auto' : '0',
+                marginRight: message.role === 'assistant' ? 'auto' : '0',
+                maxWidth: '80%'
+              }}
+            >
+              {message.content}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const WeatherDamageDashboard = () => {
   const [weatherData, setWeatherData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -85,6 +159,7 @@ const WeatherDamageDashboard = () => {
   const [selectedWeatherType, setSelectedWeatherType] = useState('all');
   const [activeTab, setActiveTab] = useState('damage-forecast');
   const [selectedScenarios, setSelectedScenarios] = useState([]);
+  const [isChatOpen, setIsChatOpen] = useState(false);
   const [scenarioResults, setScenarioResults] = useState({
     currentProjection: 24500000,
     withMitigation: 24500000,
@@ -354,7 +429,7 @@ const WeatherDamageDashboard = () => {
       <h1>Army Weather Damage Dashboard</h1>
       
       {/* Filters */}
-      <div className="filters-container">
+      <div className="filters-container" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
         <div className="filter-group">
           <label className="filter-label">Year</label>
           <select 
@@ -382,7 +457,24 @@ const WeatherDamageDashboard = () => {
             ))}
           </select>
         </div>
+
+        <button
+          onClick={() => setIsChatOpen(true)}
+          style={{
+            backgroundColor: '#4299e1',
+            color: 'white',
+            padding: '0.75rem 1.5rem',
+            borderRadius: '0.375rem',
+            border: 'none',
+            cursor: 'pointer',
+            marginLeft: 'auto'
+          }}
+        >
+          Ask a question about the data
+        </button>
       </div>
+
+      <ChatModal isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
       
       {/* Key Metrics */}
       <div className="metrics-container">
@@ -550,24 +642,31 @@ const WeatherDamageDashboard = () => {
               <div>
                 <h2>Cost by Weather Event Type</h2>
                 <div className="chart-container" style={{height: '400px'}}>
-                  <ResponsiveContainer width="100%" height="100%">
+                  <ResponsiveContainer width="100%" height={300}>
                     <PieChart>
                       <Pie
                         data={costByWeatherType}
-                        cx="40%"
+                        cx="50%"
                         cy="50%"
-                        labelLine={false}
-                        outerRadius={100}
+                        labelLine={true}
+                        outerRadius={90}
                         fill="#8884d8"
                         dataKey="value"
                         nameKey="name"
                         label={({ name, percent }) => {
                           // Only show label if percentage is 2% or greater
-                          return percent >= 0.02 ? `${name}: ${(percent * 100).toFixed(1)}%` : '';
+                          if (percent < 0.02) return '';
+                          const lines = name.split('\n');
+                          return [
+                            `${lines[0]}${lines.length > 1 ? '' : `: ${(percent * 100).toFixed(1)}%`}`,
+                            lines.length > 1 ? lines[1] : '',
+                            lines.length > 1 ? `${(percent * 100).toFixed(1)}%` : ''
+                          ].filter(Boolean).join('\n');
                         }}
                         labelStyle={{ 
-                          fontSize: '10px', 
-                          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+                          fontSize: '11px', 
+                          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                          whiteSpace: 'pre-line'
                         }}
                       >
                         {costByWeatherType.map((entry, index) => (
@@ -925,22 +1024,32 @@ const WeatherDamageDashboard = () => {
               <div className="chart-card">
                 <h3>Resource Allocation by Weather Event Type</h3>
                 <div style={{height: '250px'}}>
-                  <ResponsiveContainer width="100%" height="100%">
+                  <ResponsiveContainer width="100%" height={300}>
                     <PieChart>
                       <Pie
                         data={costByWeatherType}
                         cx="50%"
                         cy="50%"
-                        labelLine={false}
-                        outerRadius={160}
+                        labelLine={true}
+                        outerRadius={90}
                         fill="#8884d8"
                         dataKey="value"
                         nameKey="name"
                         label={({ name, percent }) => {
                           // Only show label if percentage is 2% or greater
-                          return percent >= 0.02 ? `${name}: ${(percent * 100).toFixed(1)}%` : '';
+                          if (percent < 0.02) return '';
+                          const lines = name.split('\n');
+                          return [
+                            `${lines[0]}${lines.length > 1 ? '' : `: ${(percent * 100).toFixed(1)}%`}`,
+                            lines.length > 1 ? lines[1] : '',
+                            lines.length > 1 ? `${(percent * 100).toFixed(1)}%` : ''
+                          ].filter(Boolean).join('\n');
                         }}
-                        labelStyle={{ fontSize: '10px', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+                        labelStyle={{ 
+                          fontSize: '11px', 
+                          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                          whiteSpace: 'pre-line'
+                        }}
                       >
                         {costByWeatherType.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
