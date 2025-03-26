@@ -11,7 +11,7 @@ function App() {
       <div className="asa-header">
         <div className="asa-logo-container">
           <img src="/asa_ie_logo.png" alt="ASA(IE&E)" className="asa-logo" />
-          <span className="asa-text">ASA(IE&E)</span>
+          <span className="asa-text">ASA(IE&E)  -  DEMO NOT ACCESSIBLE FOR PUBLIC USE.</span>
         </div>
       </div>
       <WeatherDamageDashboard />
